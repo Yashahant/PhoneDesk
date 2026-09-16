@@ -1,10 +1,34 @@
-# PhoneDesk V1.1
+<div align="center">
 
-Windows camera controls and screen mirroring for Android 12+.
+# PhoneDesk
+
+### Your Android phone. Your Windows desktop. Fewer commands.
+
+Camera controls and screen mirroring, together in a simple local app.
+
+**Windows x64 · Android 12+ · V1.1 beta · MIT**
+
+[**Download V1.1**](https://github.com/Yashahant/PhoneDesk/releases/tag/v1.1) &nbsp; / &nbsp; [Quick start](#connect) &nbsp; / &nbsp; [Report a bug](https://github.com/Yashahant/PhoneDesk/issues) &nbsp; / &nbsp; [Build from source](#source-and-build)
+
+</div>
+
+---
+
+## What is PhoneDesk?
+
+PhoneDesk puts scrcpy's camera and mirroring options into a Windows interface, so you can spend less time remembering commands and more time using your phone.
+
+| Camera | Mirror | Connect |
+| :--- | :--- | :--- |
+| Choose a camera and adjust resolution, FPS, bitrate, and rotation. | View and control your phone screen on your computer. | Use USB first, then switch to Wi-Fi from the app. |
+
+*Your terminal can take a short break.*
 
 ## Download
 
 Get **PhoneDesk-V1.1-Public.zip** from the [V1.1 release](https://github.com/Yashahant/PhoneDesk/releases/tag/v1.1). Extract the complete ZIP and open `PhoneDesk.exe`. The Windows x64 package includes scrcpy and the .NET runtime.
+
+**Before you start:** use an Android 12+ phone, a Windows x64 computer, and a USB cable that supports data. USB debugging must be enabled. Camera options depend on what your phone exposes.
 
 ## Connect
 
@@ -33,6 +57,21 @@ dotnet publish PhoneDesk.csproj -c Release -r win-x64 --self-contained true
 Place the official scrcpy 4.1 Windows distribution in a `scrcpy` folder beside the executable. Third-party licenses, notices and relevant source archives are included in the downloadable package. scrcpy is an independent project: https://github.com/Genymobile/scrcpy.
 
 The public build contains no saved phone configuration, personal device identifiers, logs or debug symbols. Only V1.1 is distributed by this repository.
+
+## Feedback and contributions
+
+Found a bug or have an idea? [Open an issue](https://github.com/Yashahant/PhoneDesk/issues). For a bug report, include:
+
+- Your Android version and Windows version.
+- Whether you used USB or Wi-Fi.
+- What you did, what you expected, and what happened.
+- Any relevant error message, with private information removed.
+
+Remove IP addresses, device serial numbers, usernames, and other personal details from logs or screenshots before sharing. Focused pull requests are welcome; for a large change, start with an issue so we can discuss the approach.
+
+## Credits
+
+PhoneDesk provides the desktop interface. [scrcpy](https://github.com/Genymobile/scrcpy) and ADB provide the underlying Android connection and streaming capabilities. Thank you to their maintainers and the developers of the bundled dependencies.
 
 ## License
 
