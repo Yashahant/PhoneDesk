@@ -33,3 +33,9 @@ dotnet publish PhoneDesk.csproj -c Release -r win-x64 --self-contained true
 Place the official scrcpy 4.1 Windows distribution in a `scrcpy` folder beside the executable. Third-party licenses, notices and relevant source archives are included in the downloadable package. scrcpy is an independent project: https://github.com/Genymobile/scrcpy.
 
 The public build contains no saved phone configuration, personal device identifiers, logs or debug symbols. Only V1.1 is distributed by this repository.
+
+## License
+
+PhoneDesk V1.1's own source code and documentation are open source under the [MIT License](LICENSE), copyright (c) 2026 Yashahant. This also covers PhoneDesk's own code in the V1.1 release downloads. You may use, modify and redistribute it, including commercially, provided you retain the copyright and license notice.
+
+Bundled third-party components, including scrcpy, ADB, .NET, FFmpeg, SDL and libusb, remain under their respective licenses; the PhoneDesk MIT license does not replace those terms. See the license and notice files included in the downloadable package. When redistributing PhoneDesk, include this repository's LICENSE alongside the applicable third-party notices.
